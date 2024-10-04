@@ -1,0 +1,45 @@
+{
+    "HomePage": {
+        "title": "The free, fun, and effective way to learn a language!",
+        "button0": "LOGIN",
+        "button1": "GET STARTED",
+        "button2": "I ALREADY HAVE AN ACCOUNT",
+        "button3": "Continue learning",
+        "aboutHead1": "free. fun. effective.",
+        "aboutHead2": "stay motivated",
+        "aboutContent0": "Learning with Lingo is fun, and",
+        "aboutContent1": "research shows that it works",
+        "aboutContent2": "! With quick, bite-sized lessons, you’ll earn points and unlock new levels while gaining real-world communication skills.",
+        "aboutContent3": "We make it easy to form a habit of language learning with game-like features, fun challenges, and reminders from our friendly mascot, Duo the owl.",
+        "footer0": "© 2024 Lingo. All rights reserved.",
+        "footer1": "Privacy Policy",
+        "footer2": "Terms of Service",
+        "footer3": "Contact Us"
+    },
+    "SideNav" : {
+        "learn": "Learn",
+        "leaderboard": "Leaderboard",
+        "quest": "Quest",
+        "shop": "Shop"
+    },
+    "FeedWrapper": {
+        "country": "Spanish"
+    },
+    "LearnPage": {
+        "international": "International Language Courses",
+        "native": "Native Language Courses"
+    },
+    "errorPage": {
+        "errorMessage": "No Data is Found"
+    },
+    "exitModal": {
+        "phase1": "Wait, Don't go!",
+        "phase2": "You're about to leave the lesson. Are you sure?",
+        "continueButton": "KEEP LEARNING",
+        "exitButton": "END SESSION"
+    },
+    "LocaleSwitcher": {
+        "label": "Change Language",
+        "locale": "{locale, select, jp {Japanese} en {English} other {Unknown}}"
+    }
+}

@@ -1,0 +1,45 @@
+{
+    "HomePage": {
+        "title": "無料で楽しく効果的に言語を学習できる方法です。",
+        "button0": "ログイン",
+        "button1": "始めましょう",
+        "button2": "すでにアカウントを持っています",
+        "button3": "学び続ける",
+        "aboutHead1": "無料。楽しい。効果的。",
+        "aboutHead2": "モチベーションを維持する",
+        "aboutContent0": "Lingo で学ぶのは楽しいし",
+        "aboutContent1": "研究はそれが機能することを示しています",
+        "aboutContent2": "！簡単なレッスンでポイントを獲得し、新しいレベルのロックを解除しながら、実際のコミュニケーション スキルを習得します。",
+        "aboutContent3": "ゲームのような機能、楽しいチャレンジ、フレンドリーなマスコットであるフクロウの Duo からのリマインダーにより、言語学習の習慣を簡単に身につけることができます。",
+        "footer0": "© 2024 年のリンゴ。無断転載を禁じます。",
+        "footer1": "プライバシーポリシー",
+        "footer2": "利用規約",
+        "footer3": "お問い合わせ"
+    },
+    "SideNav" : {
+        "learn": "学ぶ",
+        "leaderboard": "リーダーボード",
+        "quest": "クエスト",
+        "shop": "店"
+    },
+    "FeedWrapper": {
+        "country": "スペイン語"
+    },
+    "LearnPage": {
+        "international": "国際言語コース",
+        "native": "母国語コース"
+    },
+    "errorPage": {
+        "errorMessage": "データが見つかりません"
+    },
+    "exitModal": {
+        "phase1": "待って、行かないで！",
+        "phase2": "レッスンを終えようとしています。よろしいですか?",
+        "continueButton": "学び続ける",
+        "exitButton": "セッション終了"
+    },
+    "LocaleSwitcher": {
+        "label": "言語を変えてください",
+        "locale": "{locale, select, jp {Japanese} en {English} other {Unknown}}"
+    }
+}
