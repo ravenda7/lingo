@@ -100,81 +100,74 @@ const main = async () => {
         // Inserting Uints
         await db.insert(schema.units).values([
             {
-                id: 1,
-                courseId: 1,
+                id:1,
+                courseId: 1, //Spanish
                 title: "Unit 1",
-                description: "Learn the basics of Spanish",
+                description: "Learn the basics of Spanish.",
                 order: 1,
-            },
+            }
         ]);
 
-        //Inserting Lessons
         await db.insert(schema.lessons).values([
             {
-                id: 1,
-                unitId: 1,
+                id:1,
+                unitId: 1, //unit 1 (Learn the basics..)
                 order: 1,
-                title: "Noun",
+                title: "Nouns",
             },
             {
-                id: 2,
-                unitId: 1,
+                id:2,
+                unitId: 1, //unit 1 (Learn the basics..)
                 order: 2,
-                title: "Noun",
+                title: "Verbs",
             },
             {
-                id: 3,
-                unitId: 1,
+                id:3,
+                unitId: 1, //unit 1 (Learn the basics..)
                 order: 3,
-                title: "Noun",
+                title: "Verbs",
             },
             {
-                id: 4,
-                unitId: 1,
+                id:4,
+                unitId: 1, //unit 1 (Learn the basics..)
                 order: 4,
-                title: "Noun",
+                title: "Verbs",
             },
             {
-                id: 5,
-                unitId: 1,
+                id:5,
+                unitId: 1, //unit 1 (Learn the basics..)
                 order: 5,
-                title: "Noun",
-            },
-            {
-                id: 6,
-                unitId: 1,
-                order: 6,
-                title: "Noun",
-            },
-            {
-                id: 7,
-                unitId: 1,
-                order: 7,
-                title: "Noun",
-            },
-            {
-                id: 8,
-                unitId: 1,
-                order: 8,
-                title: "Noun",
+                title: "Verbs",
             },
         ]);
 
-        //Inseting the challenges for each lessons
         await db.insert(schema.challenges).values([
             {
-                id: 1,
-                lessonId: 1,
+                id:1,
+                lessonId: 1, // Nouns
                 type: "SELECT",
                 order: 1,
-                question: 'Which one of these is "The man"?'
+                question: 'Which one of these is the "The man"?',
             },
+            {
+                id:2,
+                lessonId: 1, // Nouns
+                type: "ASSIST",
+                order: 2,
+                question: '"The man"?',
+            },
+            {
+                id:3,
+                lessonId: 1, // Nouns
+                type: "SELECT",
+                order: 3,
+                question: 'Which one of these is the "The Robot"?',
+            },
+
         ]);
 
-        //Inerting the challenges Options for each challenges
         await db.insert(schema.challengeOptions).values([
             {
-                id: 1,
                 challengeId: 1,
                 imageSrc: "/man.svg",
                 correct: true,
@@ -182,22 +175,65 @@ const main = async () => {
                 audioSrc: "/es_man.mp3",
             },
             {
-                id: 2,
                 challengeId: 1,
-                imageSrc: "/women.svg",
+                imageSrc: "/woman.svg",
                 correct: false,
-                text: "el mujer",
+                text: "la mujer",
                 audioSrc: "/es_woman.mp3",
             },
             {
-                id: 3,
                 challengeId: 1,
                 imageSrc: "/robot.svg",
                 correct: false,
                 text: "el robot",
                 audioSrc: "/es_robot.mp3",
             },
-        ])
+        ]);
+
+        await db.insert(schema.challengeOptions).values([
+            {
+                challengeId: 2,
+                correct: true,
+                text: "el hombre",
+                audioSrc: "/es_man.mp3",
+            },
+            {
+                challengeId: 2,
+                correct: false,
+                text: "la mujer",
+                audioSrc: "/es_woman.mp3",
+            },
+            {
+                challengeId: 2,
+                correct: false,
+                text: "el robot",
+                audioSrc: "/es_robot.mp3",
+            },
+        ]);
+
+        await db.insert(schema.challengeOptions).values([
+            {
+                challengeId: 3,
+                imageSrc: "/man.svg",
+                correct: false,
+                text: "el hombre",
+                audioSrc: "/es_man.mp3",
+            },
+            {
+                challengeId: 3,
+                imageSrc: "/woman.svg",
+                correct: false,
+                text: "la mujer",
+                audioSrc: "/es_woman.mp3",
+            },
+            {
+                challengeId: 3,
+                imageSrc: "/robot.svg",
+                correct: true,
+                text: "el robot",
+                audioSrc: "/es_robot.mp3",
+            },
+        ]);
 
         console.log("Seeding finished");
     }catch(error){

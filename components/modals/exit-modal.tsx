@@ -2,7 +2,6 @@
 
 import dynamic from 'next/dynamic';
 import Dog from "@/public/exitModal.json";
-import Image from "next/image";
 import { useRouter } from "@/navigation";
 import { useEffect, useState } from "react";
 import {
@@ -35,12 +34,6 @@ export const ExitModal = () => {
             <DialogContent className="max-w-md">
                 <DialogHeader>
                     <div className="flex items-center w-full justify-center mb-5">
-                        {/* <Image 
-                            src="/mascot_sad.svg"
-                            alt="Mascot"
-                            height={80}
-                            width={80}
-                        /> */}
                         <div className='w-[150px] h-[120px]'>
                         <Lottie
                             autoPlay={true}
@@ -51,11 +44,9 @@ export const ExitModal = () => {
                         </div>
                     </div>
                     <DialogTitle className="text-center font-bold text-2xl">
-                        {/* Wait, Don&apos;t go! */}
                         {t("phase1")}
                     </DialogTitle>
                     <DialogDescription className="text-center text-base">
-                        {/* You&apos;re about to leave the lesson. Are you sure? */}
                         {t("phase2")}
                     </DialogDescription>
                 </DialogHeader>
@@ -67,7 +58,6 @@ export const ExitModal = () => {
                             size="lg"
                             onClick={close}
                         >
-                            {/* Keep learning */}
                             {t("continueButton")}
                         </Button>
                         <Button
@@ -79,7 +69,6 @@ export const ExitModal = () => {
                                 router.push("/learn");
                             }}
                         >
-                            {/* End Session */}
                             {t("exitButton")}
                         </Button>
                     </div>
